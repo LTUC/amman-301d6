@@ -1,4 +1,4 @@
-'use strict';
+use strict';
 
 // STEP 1
 // This is a standard function expression. You may also be familiar with function declarations, which begin with the "function" keyword.
@@ -98,7 +98,7 @@ const newObject = array => ({
 });
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
+console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 10
@@ -192,7 +192,7 @@ Student.prototype.scope = function() {
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(joe.scope());
 
-Student.prototype.scopeArrow = () => console.log(this);
+Student.prototype.scopeA/rrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(joe.scopeArrow());
@@ -203,4 +203,4 @@ console.log(joe.scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 //undefined
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// because the arrow function is putting this to the browser Window.
